@@ -13,7 +13,7 @@ FROM eclipse-temurin:11-jre
 
 WORKDIR /app
 
-COPY --from=buil /app/target/demo-1.0.0.jar app.jar
+COPY --from=build /app/target/demo-1.0.0.jar app.jar
 
 EXPOSE 8080
 
